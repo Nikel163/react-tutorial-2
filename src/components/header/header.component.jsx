@@ -3,12 +3,12 @@ import React from 'react'
 import CartIcon from '../cart-icon/cart-icon.component'
 import Search from '../search/search.component'
 
-const Header = () => (
+const Header = ({ onSearchChange }) => (
     <header className={styles.root}>
         <div className={`${styles.logo} ${styles.menuItem}`}>
             <a href="/">T-Shirt Shop</a>
         </div>
-        <Search className={styles.menuItem} />
+        <Search className={styles.menuItem} onSearchChange={onSearchChange}/>
         <CartIcon className={styles.menuItem} />
     </header>
 )
