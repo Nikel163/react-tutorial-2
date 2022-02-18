@@ -1,3 +1,12 @@
+export function loadProducts() {
+    return new Promise(resolve => {
+        setTimeout(
+            () => resolve(products),
+            5000
+        )
+    })
+}
+
 export const products = [
     {
         id: 1,
